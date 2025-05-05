@@ -1,13 +1,13 @@
 `default_nettype none
-  module risc_regfile (
-    input wire        clk,
-    input wire [3:0]  rs1_addr,
-    input wire [3:0]  rs2_addr,
-    input wire [3:0]  rd_addr,
-    input wire        rd_write,
-    output wire [7:0] rs1,
-    output wire [7:0] rs2,
-    input wire [7:0]  rd);
+module risc_regfile (
+  input wire        clk,
+  input wire [3:0]  rs1_addr,
+  input wire [3:0]  rs2_addr,
+  input wire [3:0]  rd_addr,
+  input wire        rd_write,
+  output wire [7:0] rs1,
+  output wire [7:0] rs2,
+  input wire [7:0]  rd);
 
   reg [7:0] mem [0:15];
 
